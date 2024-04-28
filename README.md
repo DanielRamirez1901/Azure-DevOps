@@ -50,6 +50,21 @@ azure-pipelines.yml```
         testResultsFiles: '**/surefire-reports/TEST-*.xml'
         goals: 'package'
 
-```
 
 and then, we can press save and run
+
+
+Now, we can maybe see an error
+
+
+![Image5](images/image5.png)
+
+That agents are not free coz need cpu, ram, hard disk, etc and we can ask for rss to microsoft but the other solution is run the agent in our local machine and that is going to use our rss
+
+Go to project settings/ agent pools / Add a pool
+
+And in pool type select, self hosted with a name and description if u want and select the checkbox called grant access permission to all pipelines
+
+![Image6](images/image6.png)
+
+So we click in the recently added agent, click on agent page and then in new agent and then follow the steps to download and run the agent inside of ur computer
